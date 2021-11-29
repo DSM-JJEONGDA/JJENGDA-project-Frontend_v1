@@ -2,6 +2,10 @@ import React from 'react'
 import * as S from './styles'
 import Logo from '../../assets/images/logo.svg'
 import BackGround from '../../assets/images/landing/background.svg'
+import Developer from '../../assets/images/landing/footerbackground.svg'
+import Front from '../../assets/images/landing/front.svg'
+import Back from '../../assets/images/landing/back.svg'
+import Design from '../../assets/images/landing/design.svg'
 function Landing() {
     return (
         <S.LandingWrapper>
@@ -18,6 +22,11 @@ function Landing() {
                     <S.LoginBtn>로그인 / 회원가입 바로가기</S.LoginBtn>
                 </S.LoginBox>
             </S.LaindingMain>
+            <S.LaindingBottom img={Developer}>
+                <S.DeveloperImg img={Front} />
+                <S.DeveloperImg img={Back} />
+                <S.DeveloperImg img={Design} />
+            </S.LaindingBottom>
         </S.LandingWrapper>
     )
 }

@@ -8,7 +8,7 @@ export const LandingWrapper = styled.section`
     /* width: 1280px; */
     margin: 0 auto;
     `
-export const LandingTop = styled.div`
+export const LandingTop = styled.section`
     width: 100%;
     background-color: rgba(0,0,0,0.6);
     height: 400px;
@@ -38,22 +38,23 @@ export const Line = styled.div`
     position: absolute;
     bottom: 60px;
 `
-export const LaindingMain = styled.div`
+export const LaindingMain = styled.section`
     background-image: url(${(props: StyleProps) => props.img});
     width: 100%;
     height: 400px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: absolute;
+    overflow: auto;
+    /* position: absolute; */
 `
 export const LoginBox = styled.div`
     width: 350px;
     height: 250px;
+    margin: 85px 65px 0 auto;
     background-color: #ffffff;
     border: 1px solid #707070;
     border-radius: 10px;
-    margin: 85px 65px 0 auto;
     > p {
         margin: 50px auto 0 auto;
         font-family: 'BM Kirang Haerang';
@@ -78,4 +79,19 @@ export const LoginBtn = styled.div`
     font-size: 18px;
     font-family: 'BM Kirang Haerang';
     box-shadow: 0px 3px 6px rgba(0,0,0,0.16);
+`
+
+export const LaindingBottom = styled.section`
+    background-image: url(${(props: StyleProps) => props.img});
+    width: 100%;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+`
+export const DeveloperImg = styled.div`
+    background-image: url(${(props: StyleProps) => props.img});
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 `
